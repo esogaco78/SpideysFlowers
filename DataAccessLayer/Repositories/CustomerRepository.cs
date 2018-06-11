@@ -9,14 +9,14 @@ using System.Linq;
 
 namespace DataAccessLayer
 {
-    public class BusinessRepository : IBusinessRepository
+    public class CustomerRepository : ICustomerRepository
     {
-        public bool Delete(int businessid)
+        public bool Delete(int customerid)
         {
             throw new NotImplementedException();
         }
 
-        public List<Business> GetAll()
+        public List<Customer> GetAll()
         {
             using (IDbConnection db = new SqlConnection(Helper.ConnectionString))
             {
@@ -25,21 +25,21 @@ namespace DataAccessLayer
                     db.Open();
                 }
 
-                return db.Query<Business>("SELECT * FROM Businesses", commandType: CommandType.Text).ToList(); ;
+                return db.Query<Customer>("GetCustomers", commandType: CommandType.StoredProcedure).ToList();
             }
         }
 
-        public Business GetById(int id)
+        public Customer GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public int Insert(Business business)
+        public int Insert(Customer customer)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(Business business)
+        public bool Update(Customer customer)
         {
             throw new NotImplementedException();
         }

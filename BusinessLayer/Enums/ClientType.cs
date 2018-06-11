@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+namespace BusinessLayer.Enums
 {
-    public enum EntityState
+    public enum ClientType
     {
-        Unchanged,
-        Added,
-        Changed,
-        Deleted
+        Customer,
+        Business
     }
 }

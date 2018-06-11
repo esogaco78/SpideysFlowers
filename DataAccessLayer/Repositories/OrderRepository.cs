@@ -1,6 +1,11 @@
-﻿using System.Collections.Generic;
-using BusinessLayer.Entities;
+﻿using BusinessLayer.Entities;
 using BusinessLayer.Interfaces;
+using Dapper;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
 
 namespace DataAccessLayer
 {
@@ -13,7 +18,15 @@ namespace DataAccessLayer
 
         public List<Order> GetAll()
         {
-            throw new System.NotImplementedException();
+            using (IDbConnection db = new SqlConnection(Helper.ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                {
+                    db.Open();
+                }
+
+                return db.Query<Order>("GetOrders", commandType: CommandType.StoredProcedure).ToList();
+            }
         }
 
         public List<Order> GetAllByBusinessDetails(int businessId)

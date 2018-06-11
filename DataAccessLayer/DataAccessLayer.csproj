@@ -44,11 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessRepository.cs" />
-    <Compile Include="CustomerRepository.cs" />
+    <Compile Include="Repositories\BusinessRepository.cs" />
+    <Compile Include="Repositories\ClientOrderRepository.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Helper.cs" />
-    <Compile Include="NoteRepository.cs" />
-    <Compile Include="OrderRepository.cs" />
+    <Compile Include="Repositories\NoteRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

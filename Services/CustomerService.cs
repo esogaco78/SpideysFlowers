@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using BusinessLayer;
 using BusinessLayer.Entities;
+using BusinessLayer.Enums;
 using BusinessLayer.Interfaces;
 using DataAccessLayer;
 using System.Collections.Generic;

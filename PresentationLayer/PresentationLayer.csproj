@@ -77,6 +77,8 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BusinessLayer.Entities.Business.datasource" />
+    <None Include="Properties\DataSources\BusinessLayer.Entities.Client.datasource" />
+    <None Include="Properties\DataSources\BusinessLayer.Entities.ClientOrder.datasource" />
     <None Include="Properties\DataSources\BusinessLayer.Entities.Customer.datasource" />
     <None Include="Properties\DataSources\BusinessLayer.Entities.Order.datasource" />
     <None Include="Properties\Settings.settings">

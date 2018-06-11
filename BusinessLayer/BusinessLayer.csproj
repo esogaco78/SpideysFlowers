@@ -41,10 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Business.cs" />
+    <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\ClientOrder.cs" />
     <Compile Include="Entities\Note.cs" />
     <Compile Include="Entities\Order.cs" />
-    <Compile Include="EntityState.cs" />
+    <Compile Include="Enums\ClientType.cs" />
+    <Compile Include="Enums\EntityState.cs" />
+    <Compile Include="Interfaces\IClientInterface.cs" />
+    <Compile Include="Interfaces\IClientOrderRepository.cs" />
     <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IBusinessRepository.cs" />
     <Compile Include="Interfaces\INoteRepository.cs" />
