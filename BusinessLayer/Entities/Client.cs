@@ -8,8 +8,8 @@ namespace BusinessLayer.Entities
 {
     public class Client
     {
-        int Id { get; set; }
-        int Name { get; set; }
-        bool IsBusiness { get; set; }
+        public int ClientId { get; set; }
+        public string ClientName { get; set; }
+        public bool IsBusiness { get; set; }
     }
 }

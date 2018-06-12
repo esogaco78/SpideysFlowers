@@ -1,8 +1,7 @@
 ﻿using Autofac;
 using BusinessLayer.Entities;
-using BusinessLayer.Enums;
 using BusinessLayer.Interfaces;
-using DataAccessLayer;
+using DataAccessLayer.Repositories;
 using System.Collections.Generic;
 
 namespace Services
@@ -14,13 +13,13 @@ namespace Services
         static ClientService()
         {
             ContainerBuilder builder = new ContainerBuilder();
-            builder.RegisterType<BusinessRepository>().As<IBusinessRepository>();
+            builder.RegisterType<ClientRepository>().As<IClientRepository>();
             _container = builder.Build();
         }
 
         public static List<Client> GetAll()
         {
-            return _container.Resolve<IClientInterface>().GetAll();
+            return _container.Resolve<IClientRepository>().GetAll();
         }
     }
 }

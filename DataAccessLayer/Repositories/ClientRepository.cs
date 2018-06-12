@@ -1,15 +1,14 @@
 ﻿using BusinessLayer.Entities;
-using System;
-using System.Collections.Generic;
+using BusinessLayer.Interfaces;
 using Dapper;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using BusinessLayer.Interfaces;
 
 namespace DataAccessLayer.Repositories
 {
-    public class ClientRepository : IClientInterface
+    public class ClientRepository : IClientRepository
     {
         public List<Client> GetAll()
         {

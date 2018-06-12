@@ -48,7 +48,8 @@
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Enums\ClientType.cs" />
     <Compile Include="Enums\EntityState.cs" />
-    <Compile Include="Interfaces\IClientInterface.cs" />
+    <Compile Include="Helpers\StringHelpers.cs" />
+    <Compile Include="Interfaces\IClientRepository.cs" />
     <Compile Include="Interfaces\IClientOrderRepository.cs" />
     <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IBusinessRepository.cs" />

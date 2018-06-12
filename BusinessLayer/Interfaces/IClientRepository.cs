@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BusinessLayer.Interfaces
 {
-    public interface IClientInterface
+    public interface IClientRepository
     {
         List<Client> GetAll();
     }

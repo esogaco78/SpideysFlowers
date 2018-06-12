@@ -22,6 +22,9 @@ namespace BusinessLayer.Entities
         public int NumberOfLilies { get; set; }
         public int? CustomerId { get; set; }
         public int? BusinessId { get; set; }
-        public Note Note { get; set; }
+        public bool IsBusiness { get; set; }
+        public string ClientName { get; set; }
+        public int ClientId { get; set; }
+        public string Text { get; set; }
     }
 }
